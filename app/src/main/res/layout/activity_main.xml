@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/MainBackground"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="CALCULATE YOUR"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        android:layout_centerHorizontal="true"
+    />
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="AGE"
+        android:textColor="@color/white"
+        android:background="@color/light_blue"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="10sp"
+        android:textSize="25sp"
+
+        android:layout_below="@id/txtCalculate"
+        android:layout_centerHorizontal="true"
+    />
+
+    <TextView
+        android:id="@+id/txtMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="IN MINUTES"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+
+        android:layout_below="@id/txtAge"
+        android:layout_centerHorizontal="true"
+    />
+
+    <Button
+        android:id="@+id/btnSelectDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="SELECT DATE"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textStyle="bold"
+
+        android:layout_below="@id/txtMin"
+    />
+
+    <TextView
+        android:id="@+id/txtDataOnScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="21/09/2002"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        android:layout_below="@id/btnSelectDate"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txtSelectedData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Selected Data"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        android:layout_below="@id/txtDataOnScreen"
+        android:layout_centerHorizontal="true"
+    />
+
+    <TextView
+        android:id="@+id/txtDateMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="10529290 Minutes"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtSelectedData"
+    />
+
+    <TextView
+        android:id="@+id/txtInMinuteDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="In Minute till date"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtDateMinute"
+    />
+</RelativeLayout>
